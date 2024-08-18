@@ -1,0 +1,10 @@
+[{
+    "id":0,
+    "name": "mateo.pannetier.dev",
+    "description": 
+        "A small portfolio website built with Flask and deployed on Azure Web App or Azure Kubernetes Service using Terraform and GitHub Actions.",
+    "techno": [{"Azure":"#0085CF"}, {"Terraform":"#6449EA"}, {"CI/CD":"#000000"}],
+    "githubLink": "https://github.com/Kamoui9/portfolio-flask-cicd-terraform-azure",
+    "displayed": true
+}
+]

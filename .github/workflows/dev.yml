@@ -1,0 +1,27 @@
+name: ❔: Minimal testing on push
+on:
+  push:
+    branches: ["dev"]
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Install requirements
+        run: pip3 install -r app/requirements.txt
+
+      - name: Test python code with Pytest
+        run: pytest
+
+      - name: Check PEP8 with flake8 (informative)
+        run: flake8
+        continue-on-error: true

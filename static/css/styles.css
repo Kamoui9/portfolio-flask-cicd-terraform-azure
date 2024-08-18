@@ -1,0 +1,265 @@
+/* styles.css */
+:root {
+    --bg-color: #ffffff;
+    --primary-color: #252525; /* dark gray */
+    --secondary-color: #902E21; /* blood red */
+    min-width: 350px;
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --bg-color: #252525; /* dark gray */
+        --primary-color: #ffffff;
+        --secondary-color: #902E21; /* blood red */
+    }
+}
+
+/* Global styles */
+* {
+    font-family: 'Times New Roman', Times, serif;
+    color: var(--primary-color);
+    background-color: var(--bg-color);
+    font-size: 12px;
+}
+
+
+::selection {
+    background: var(--secondary-color);
+    color: var(--bg-color);
+}
+
+/* Styles for h1 headings */
+h1 {
+    font-weight: normal;
+    font-size: 28px;
+}
+
+/* Styles for links */
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Styles for unordered lists */
+ul {
+    list-style: none;
+}
+
+/* Styles for the main container */
+.container {
+    min-height: 98vh;
+    display: flex;
+    flex-direction: column;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+/* Styles for the navigation bar */
+#navbar {
+    list-style: none;
+    padding: 0;
+    margin-top: 10%;
+    margin-bottom: 10%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.navlink {
+    display: inline;
+}
+
+.navlink a {
+    font-size: 15px;
+}
+
+a.active {
+    text-decoration: underline;
+    color: var(--secondary-color);
+}
+
+/* Styles for the "about" section */
+.highlight:hover {
+    color: white;
+    background-color: var(--secondary-color);
+}
+
+.pp {
+    margin: 10%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.pp i {
+    font-size: 10px;
+    display: flex;
+    justify-content: center;
+    margin-top: 5%;
+}
+
+.pp img {
+    height: 148px;
+    width: 106px;
+}
+
+.gridAbout {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+}
+
+/* Styles for the "projects" section */
+.gallery {
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    height: 100%;
+}
+
+.project {
+    margin-bottom: 20px;
+    border: 1.5px solid var(--primary-color);
+}
+
+/* Styles for project titles */
+.titleProject {
+    background-color: var(--primary-color);
+    border: 1.5px solid var(--primary-color);
+}
+
+.titleProject h3 {
+    font-weight: normal;
+    font-size: 20px;
+    margin: 5%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    background-color: var(--primary-color);
+    color: var(--bg-color);
+}
+
+/* Styles for project content */
+.contentProject {
+    margin: 5%;
+}
+
+.project .contentProject p {
+    font-size: 12px;
+}
+
+/* Styles for project description */
+.infoProject {
+    display: flex;
+    justify-content: space-between;
+    border-top: 1.5px solid var(--primary-color);
+}
+
+.infoProject ul {
+    margin: 0px;
+    padding: 0%;
+    display: flex;
+}
+
+.infoProject ul li {
+    display: inline;
+    font-size: 14px;
+    padding-top: 2px;
+    padding-bottom: 1px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin: 0px;
+}
+
+/* Styles for project technologies and links */
+.techno li {
+    border-right: 1.5px solid var(--primary-color);
+}
+
+.link li {
+    border-left: 1.5px solid var(--primary-color);
+}
+
+
+/* Styles for gallery images */
+.gallery img {
+    width: 260px;
+    height: auto;
+}
+
+
+/* Styles for the footer */
+footer {
+    display: flex;
+    justify-content: center;
+    margin-top: auto;
+}
+
+footer i,
+footer a {
+    font-size: 14px;
+}
+
+
+/* Styles for desktop */
+@media (min-width: 1080px) {
+    * {
+        font-size: 20px;
+    }
+
+    .container {
+        margin-left: 25%;
+        margin-right: 25%;
+    }
+
+    .navlink a {
+        font-size: 24px;
+    }
+
+    h1 {
+        font-size: 40px;
+    }
+
+    .pp img {
+        height: 230px;
+        width: 175px;
+    }
+    .pp i {
+        font-size: 14px;
+    }
+
+    #projects {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        grid-column-gap: 20px;
+        grid-row-gap: 20px;
+    }
+
+    .infoProject ul li {
+        font-size: 18px;
+    }
+
+    .project .contentProject p {
+        font-size: 17px;
+    }
+
+    .gallery {
+        grid-template-rows: repeat(5, 1fr);
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .div0 {grid-area: 1 / 2 / 3 / 3;}
+    .div1 {grid-area: 2 / 1 / 4 / 2;}
+    .div2 {grid-area: 2 / 3 / 4 / 4;}
+    .div3 {grid-area: 3 / 2 / 5 / 3;}
+    .div4 {grid-area: 4 / 1 / 6 / 2;}
+    .div5 {grid-area: 4 / 3 / 6 / 4;}
+}

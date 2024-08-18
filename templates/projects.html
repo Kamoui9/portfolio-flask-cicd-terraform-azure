@@ -1,0 +1,38 @@
+{% extends 'layout.html' %}
+{% block head %}
+    <title>/Projects</title>
+{% endblock %}
+
+{% block body %}
+    <h1>My projects</h1>
+
+    <div id="projects">
+        {% for project in projects %}
+            <div id="project{{ project.id }}" class="project">
+                <div class="titleProject">
+                    <h3>{{ project.name }}</h3>
+                </div>
+                <div class="contentProject">
+                    <p>{{ project.description }}</p>
+                </div>
+                <div class="infoProject">
+                    <ul class="techno">
+                        {% for techno in project.techno %}
+                            {% for key, value in techno.items() %}
+                                <li style="background-color:{{ value }}; color: white;">{{ key }}</li>
+                            {% endfor %}
+                        {% endfor %}
+                    </ul>
+                    <ul class="link">
+                        {% if project.githubLink %}
+                        <li style="background-color: var(--primary-color); "><a target="_blank" href="{{ project.githubLink }}" style="background-color: var(--primary-color); color: var(--bg-color);">Github</a></li>
+                        {% endif %}
+                        {% if project.link %}
+                            <li><a target="_blank" href="{{ project.link }}">Link</a></li>
+                        {% endif %}
+                    </ul>
+                </div>
+            </div>
+        {% endfor %}
+    </div>
+{% endblock %}
