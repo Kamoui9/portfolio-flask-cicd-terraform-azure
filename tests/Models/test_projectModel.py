@@ -1,4 +1,4 @@
-# WARING : tests wrote by Copilot
+# WARNING : tests wrote by Copilot
 import pytest
 from Models.projectModel import ProjectModel
 import tempfile
