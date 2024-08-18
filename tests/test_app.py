@@ -1,6 +1,6 @@
-# WARING : tests wrote by Copilot
+# WARNING : tests wrote by Copilot
 from flask_testing import TestCase
-from ..app import app
+from app import app
 
 
 class TestFlaskApp(TestCase):
