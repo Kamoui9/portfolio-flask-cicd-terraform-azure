@@ -1,4 +1,4 @@
-name: ❔: Minimal testing on push
+name: "❔: Minimal testing on push"
 on:
   push:
     branches: ["dev"]
