@@ -6,8 +6,8 @@ class ProjectModel:
     Attributes:
         data (list): A list containing project data.
     Methods:
-        __init__(self, filepath: str) -> None: Initializes the ProjectModel object
-        by loading project data from a file.
+        __init__(self, filepath: str) -> None: Initializes the ProjectModel
+        object by loading project data from a file.
 
         getProject(self, id=None): Retrieves a project based on its ID.
     """
