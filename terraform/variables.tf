@@ -4,7 +4,7 @@ variable "gh_token" {
 }
 
 variable "name" {
-  type        = string
+  type = string
 }
 
 variable "repo_owner" {
