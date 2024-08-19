@@ -1,7 +1,7 @@
 [tool.poetry]
 name = "app"
 version = "0.1.0"
-description = "A small portfolio website built as a hands-on project to learn and master CI/CD, Infrastructure as Code (IaC), and cloud technologies."
+description = "A small portfolio website built as a hands-on project to learn and understand CI/CD, Infrastructure as Code (IaC), and cloud technologies."
 authors = ["Kamoui <pannetier.mateo@gmail.com>"]
 readme = "README.md"
 
