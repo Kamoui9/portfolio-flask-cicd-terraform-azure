@@ -1,6 +1,6 @@
 # portfolio-flask-cicd-terraform-azure
 
-> A small portfolio website built as a hands-on project to learn and master CI/CD, Infrastructure as Code (IaC), and cloud technologies.
+> A small portfolio website built as a hands-on project to learn and understand CI/CD, Infrastructure as Code (IaC), and cloud technologies.
 
 This project serves as a comprehensive learning experience, allowing me to design, develop, and deploy a fully functional personal portfolio from start to finish.
 
